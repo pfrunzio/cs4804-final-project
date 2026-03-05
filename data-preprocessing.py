@@ -105,7 +105,7 @@ for t in range(nt):
     file = np.load(file_name, allow_pickle=True)
     # print(file.files)
     
-    ds["B"][t] = file['bfield']
+    ds["B"][t] = file['bfield']*100
     ds["chi_squared"][t] = file['chi_squared']
     ds["fit_params"][t] = file['fit_params']
     
