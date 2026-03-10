@@ -275,7 +275,7 @@ body = pn.pane.Markdown(
 
 The above interactive visualization explores magnetic field measurements collected using Nitrogen-Vacancy (NV) Centers in Diamond for quantum sensing. The visualization allows users to navigate the experiment across both spatial and temporal dimensions, clicking on any pixel in the magnetic field map to see the Optically Detected Magnetic Resonance (ODMR) spectrum used to calculate the field at that location and comparing it to the global average. This dashboard helps show several patterns: the quality of the ODMR fits as seen in the chi_squared variable values improves steadily as longer experiment run times accumulate more data, the two resonance dips in the ODMR chart are consistently asymmetric, and certain regions of the magnetic field map have noticeably lower contrast which suggests larger measurement uncertainty. This dashboard demonstrates that interactive visualizations like this one can help develop additional insight on complex, high dimensional data that would be difficult to detect with static plots alone.
 
-Process Book Link:
+Process Book Link: https://github.com/pfrunzio/cs4804-final-project/blob/main/Process_Book.pdf
 Data Link: https://github.com/pfrunzio/cs4804-final-project/blob/main/processed_data.nc
 Screen Cast Link: https://www.loom.com/share/92999c74e503497cbf9d1b7fc3a2bf48
 
@@ -301,7 +301,7 @@ dashboard = pn.Column(
 )
 
 
-dashboard.servable()
-# dashboard.save("dashboard.html")
+# dashboard.servable()
+dashboard.save("dashboard.html")
 
 
