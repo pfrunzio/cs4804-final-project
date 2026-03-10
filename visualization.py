@@ -263,17 +263,23 @@ By Paola Frunzio
 instructions = pn.pane.Markdown(
     """
 ### How to Use
-- Click a pixel on the heatmap to view the ODMR spectrum at that point.
-- Select the experiment run time with the slider.
+- Click a pixel on the magnetic field map to view the ODMR spectrum at that point.
+- Select the experiment run time length with the slider.
+- Use chart controls to zoom in on, pan across, and reset the magnetic field map. 
 """,
     width=500, height=150
 )
 
 body = pn.pane.Markdown(
     """
-***TODO
-summarize the main results of the project
-link process book, data, screen cast (embed if possible)
+
+The above interactive visualization explores magnetic field measurements collected using Nitrogen-Vacancy (NV) Centers in Diamond for quantum sensing. The visualization allows users to navigate the experiment across both spatial and temporal dimensions, clicking on any pixel in the magnetic field map to see the Optically Detected Magnetic Resonance (ODMR) spectrum used to calculate the field at that location and comparing it to the global average. This dashboard helps show several patterns: the quality of the ODMR fits as seen in the chi_squared variable values improves steadily as longer experiment run times accumulate more data, the two resonance dips in the ODMR chart are consistently asymmetric, and certain regions of the magnetic field map have noticeably lower contrast which suggests larger measurement uncertainty. This dashboard demonstrates that interactive visualizations like this one can help develop additional insight on complex, high dimensional data that would be difficult to detect with static plots alone.
+
+Process Book Link:
+Data Link: https://github.com/pfrunzio/cs4804-final-project/blob/main/processed_data.nc
+Screen Cast Link: https://www.loom.com/share/92999c74e503497cbf9d1b7fc3a2bf48
+
+<div style="position: relative; padding-bottom: 49.375%; height: 0;"><iframe src="https://www.loom.com/embed/92999c74e503497cbf9d1b7fc3a2bf48" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 """,
     width=1500
 )
@@ -290,7 +296,8 @@ dashboard = pn.Column(
             variable_table,
             odmr_line_chart
         )
-    )
+    ),
+    body
 )
 
 
