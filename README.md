@@ -29,17 +29,17 @@ Process Book for this project can be found at https://github.com/pfrunzio/cs4804
 - Use chart controls to zoom in on, pan across, and reset the magnetic field map. 
 
 ### Technical Achievements
-Data Processing
+#### Data Processing
 - Converted experimental data from NumPy arrays in .npz files into a structured netCDF dataset using Xarray with labeled multidimensional access.
 - Used efficient data handling, reducing a potential 99.5 million row flat dataframe by opting for a multidimensional array structure.
 - Implemented spatial data downsampling from 1080x1920 to 108x192 maps, enabling interactive rendering of the magnetic field map without losing too much visual information.
-Visualization
+#### Visualization
 - Developed an interactive visualization dashboard in Python using multiple libraries including Pandas, NumPy, Xarray, Matplotlib, Altair, Panel, and Holoviews.
 - Handled visualizing large datasets by enabling VegaFusion in Altair to bypass the default 5k row limit and support 20k datapoints.
 - Built an interactive dashboard that allows for exploring experimental data in spatial and temporal dimensions.
 - Used panel widgets and Python callbacks to dynamically update the visualizations based on user interaction.
 
-Design Achievements
+### Design Achievements
 - Designed a multi-chart dashboard with a magnetic field map, pixel specific ODMR spectrum, global ODMR spectrum, and quantitative variable comparisons.
 - Enabled spatial exploration of the experimental data by clicking any pixel on the magnetic field map to explore the associated ODMR spectrum. 
 - Enabled temporal exploration of the experimental data through a slider that changes the experiment runtime length and updates all visualizations.
