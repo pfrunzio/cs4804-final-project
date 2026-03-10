@@ -18,7 +18,7 @@ The project website can be found at https://pfrunzio.github.io/cs4804-final-proj
 The fully interactive dashboard can be hosted using this repository by running the command
 `panel serve visualization.py --show`
 
-A screen cast showing the interactive elements of this dashboard can be found at https://www.loom.com/share/92999c74e503497cbf9d1b7fc3a2bf48
+A screen cast showing the interactive elements of this dashboard can be found at [https://www.loom.com/share/92999c74e503497cbf9d1b7fc3a2bf48](https://www.loom.com/share/92999c74e503497cbf9d1b7fc3a2bf48)
 
 
 ### How to Use
