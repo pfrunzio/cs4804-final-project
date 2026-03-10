@@ -20,6 +20,8 @@ The fully interactive dashboard can be hosted using this repository by running t
 
 A screen cast showing the interactive elements of this dashboard can be found at [https://www.loom.com/share/92999c74e503497cbf9d1b7fc3a2bf48](https://www.loom.com/share/92999c74e503497cbf9d1b7fc3a2bf48)
 
+Process Book for this project can be found at https://github.com/pfrunzio/cs4804-final-project/blob/main/Process_Book.pdf
+
 
 ### How to Use
 - Click a pixel on the magnetic field map to view the ODMR spectrum at that point.
